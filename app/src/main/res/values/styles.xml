@@ -6,15 +6,34 @@
         <item name="android:textAppearance">?attr/textAppearanceBody1</item>
     </style>
 
-    <style name="Widget.TipCalculator.CompoundButton.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+    <style name="Widget.TipCalculator.CompoundButton.Switch_dark"
+        parent="Widget.MaterialComponents.CompoundButton.Switch">
         <item name="android:minHeight">@dimen/min_text_height</item>
         <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/primary90</item>
         <item name="android:textAppearance">?attr/textAppearanceBody1</item>
     </style>
 
-    <style name="Widget.TipCalculator.CompoundButton.RadioButton"
-        parent="Widget.MaterialComponents.CompoundButton.RadioButton">
-        <item name="android:paddingStart">8dp</item>
+    <style name="Widget.TipCalculator.CompoundButton.Switch_light"
+        parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:minHeight">@dimen/min_text_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/primary10</item>
         <item name="android:textAppearance">?attr/textAppearanceBody1</item>
     </style>
+
+    <style name="Widget.TipCalculator.CompoundButton.RadioButton_dark"
+        parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:textColor">@color/secondary80</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
+
+    <style name="Widget.TipCalculator.CompoundButton.RadioButton_light"
+        parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:textColor">@color/secondary40</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
+
 </resources>

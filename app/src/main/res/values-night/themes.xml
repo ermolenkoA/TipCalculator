@@ -1,13 +1,26 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.TipCalculator" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary80</item>
+        <item name="colorPrimaryVariant">@color/primary70</item>
+        <item name="colorOnPrimary">@color/primary20</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/secondary80</item>
+        <item name="colorOnSecondary">@color/secondary20</item>
+        <!-- Secondary brand color -->
+        <item name="android:textColor">@color/primary90</item>
+        <!-- Background color -->
+        <item name="android:windowBackground">@color/primary30</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Text views -->
         <item name="android:textViewStyle">@style/Widget.TipCalculator.TextView</item>
         <!-- Text input fields -->
         <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
         <!-- Radio buttons -->
-        <item name="radioButtonStyle">@style/Widget.TipCalculator.CompoundButton.RadioButton</item>
+        <item name="radioButtonStyle">@style/Widget.TipCalculator.CompoundButton.RadioButton_dark</item>
         <!-- Switches -->
-        <item name="switchStyle">@style/Widget.TipCalculator.CompoundButton.Switch</item>
+        <item name="switchStyle">@style/Widget.TipCalculator.CompoundButton.Switch_dark</item>
     </style>
 </resources>
