@@ -1,7 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.TipCalculator" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Text views -->
+        <item name="android:textViewStyle">@style/Widget.TipCalculator.TextView</item>
+        <!-- Text input fields -->
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        <!-- Radio buttons -->
+        <item name="radioButtonStyle">@style/Widget.TipCalculator.CompoundButton.RadioButton</item>
+        <!-- Switches -->
+        <item name="switchStyle">@style/Widget.TipCalculator.CompoundButton.Switch</item>
     </style>
 </resources>
