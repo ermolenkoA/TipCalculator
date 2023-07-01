@@ -1,7 +1,12 @@
 package com.example.tipcalculator
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
+import android.view.View
+import android.view.inputmethod.InputMethodManager
+import android.widget.TextView
 import com.example.tipcalculator.databinding.ActivityMainBinding
 import java.lang.NumberFormatException
 import java.text.NumberFormat
@@ -15,6 +20,16 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.calculateButton.setOnClickListener{ calculateTip() }
+        binding.costOfServiceEditText.setOnKeyListener { view, keyCode, _ ->
+            handleKeyEvent(view, keyCode)
+        }
+
+        binding.mainScreen.setOnClickListener {
+            if(binding.costOfServiceEditText.isFocused) {
+                endEditing(binding.costOfServiceEditText)
+            }
+        }
+
     }
 
     private fun calculateTip() {
@@ -48,4 +63,20 @@ class MainActivity : AppCompatActivity() {
         val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
         binding.tipResult.text = getString(R.string.tipAmount, formattedTip)
     }
+
+    private fun handleKeyEvent(view: View, keyCode: Int): Boolean {
+        if (keyCode == KeyEvent.KEYCODE_ENTER) {
+            endEditing(view)
+            return true
+        }
+        return false
+    }
+
+    private fun endEditing(view: View) {
+        val inputMethodManager =
+            getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+        view.clearFocus()
+    }
+
 }
