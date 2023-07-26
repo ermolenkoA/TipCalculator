@@ -5,12 +5,14 @@
         <item name="colorPrimary">@color/primary80</item>
         <item name="colorPrimaryVariant">@color/primary70</item>
         <item name="colorOnPrimary">@color/primary20</item>
+        <item name="colorAccent">@color/primary90</item>
         <!-- Secondary brand color -->
         <item name="colorSecondary">@color/secondary80</item>
         <item name="colorOnSecondary">@color/secondary20</item>
-        <!-- Secondary brand color -->
+        <!-- Text color -->
         <item name="android:textColor">@color/primary90</item>
         <!-- Background color -->
+        <item name="colorOnBackground">#20000000</item>
         <item name="android:windowBackground">@color/primary30</item>
         <!-- Status bar color -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>

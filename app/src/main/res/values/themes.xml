@@ -5,12 +5,16 @@
         <item name="colorPrimary">@color/primary40</item>
         <item name="colorPrimaryVariant">@color/primary50</item>
         <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">@color/primary10</item>
         <!-- Secondary brand color -->
         <item name="colorSecondary">@color/secondary40</item>
         <item name="colorOnSecondary">@color/white</item>
+        <!-- Text color -->
+        <item name="android:textColor">@color/primary10</item>
         <!-- Status bar color -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Background color -->
+        <item name="colorOnBackground">#70FFFFFF</item>
         <item name="android:windowBackground">@color/primary90</item>
         <!-- Text views -->
         <item name="android:textViewStyle">@style/Widget.TipCalculator.TextView</item>
